@@ -133,7 +133,7 @@ public class Nonpri {
     }
 
 
-    public void deletefirst()
+    /*public void deletefirst()
     {
         if(isempty())
         {
@@ -144,7 +144,7 @@ public class Nonpri {
             Node temp=start;
             start=temp.next;
         }
-    }
+    }*/
 
 
     public static void main(String[] args) {
