@@ -133,7 +133,7 @@ public class Nonpri {
     }
 
 
-    /*public void deletefirst()
+    public void deletefirst()
     {
         if(isempty())
         {
@@ -143,8 +143,30 @@ public class Nonpri {
         {
             Node temp=start;
             start=temp.next;
+            System.out.println("deleted element from first  :"+ temp.getdata());
         }
-    }*/
+    }
+
+    public void deletelast()
+    {
+        if(isempty())
+        {
+            System.out.println("list is empty");
+        }
+        else
+
+        {
+            Node temp=start;
+            Node pre=null;
+            while(temp.next!=null)
+            {
+                pre=temp;
+            temp=temp.getnext();
+            }
+            pre.next=null;
+            System.out.println("deleted element from last  :"+temp.getdata());
+        }
+    }
 
 
     public static void main(String[] args) {
@@ -162,6 +184,10 @@ public class Nonpri {
      obj.insertfirst(e3);
      obj.insertfirst(e4);
      obj.insertlast(e5);
+     obj.display();
+     obj.deletefirst();
+     obj.display();
+     obj.deletelast();
      obj.display();
     }
 }
